@@ -55,7 +55,7 @@ controlnet = ControlNetModel.from_pretrained(controlnet_path, torch_dtype=torch_
 
 base_model_path = '/content/drive/MyDrive/colab/models/latent_diffusion_models/sdxxxl_v30.safetensors'
 
-pipe = StableDiffusionXLInstantIDPipeline.from_pretrained(
+pipe = StableDiffusionXLInstantIDPipeline.from_single_file(
     base_model_path,
     controlnet=controlnet,
     #torch_dtype=torch.float16,
