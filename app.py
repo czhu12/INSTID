@@ -53,7 +53,7 @@ controlnet_path = f'./checkpoints/ControlNetModel'
 #controlnet = ControlNetModel.from_pretrained(controlnet_path, torch_dtype=torch.float16)
 controlnet = ControlNetModel.from_pretrained(controlnet_path, torch_dtype=torch_dtype)
 
-base_model_path = './checkpoints/sdxl.safetensors'
+base_model_path = '/content/drive/MyDrive/colab/models/latent_diffusion_models/sdxxxl_v30.safetensors'
 
 pipe = StableDiffusionXLInstantIDPipeline.from_pretrained(
     base_model_path,
